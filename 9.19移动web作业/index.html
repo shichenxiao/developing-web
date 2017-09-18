@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+	    <script src="js/jquery.js"></script>    
+	    <script src="js/bootstrap.min.js"></script>
+		<style>
+			body{
+				
+			}
+			*{
+				margin:0 auto;
+				padding:0;
+			}
+			#header-top-one{
+				text-align:right;	
+				height:30px;
+			}
+			#header-top-one a{
+				color:white;
+				text-decoration: blink;
+			}
+			#header-top-one a:hover{
+				color:white;
+				text-decoration: blink;
+				font-weight: bold;
+			}
+			#header-top-two{
+				background-color:white;
+				background-size:100% 10%px;
+				box-shadow:0px 5px 7px #E5E5E5; 
+			}
+			#header-top-two1 ul{
+				padding-top:25px;
+			}
+			#header-top-two1 ul li{
+				display:inline;
+				line-height:35px;
+			}
+			#header-top-two1 ul li a{
+				color:black;
+				font-size:15px;
+				line-height:35px;
+			}
+			#header-top-two1 ul li a:hover{
+				color:#EE4000;
+				text-decoration:none;
+			}
+			#content{
+				width:1000px;
+				margin-left:125px;
+			}
+			#content1{
+				padding-top:130px;
+				height:300px;
+				float:left;
+			}
+			
+			#content-image1{		
+				float:left;
+				width:420px;
+				height:300px;
+			}
+			
+			#content-image1 img{
+				height:265px;
+			}
+			#content-word1{
+				float:left;
+				width:580px;
+				color:#AAAAAA;
+			}
+			#content2{
+				margin-top:20px;
+				float:left;
+			}
+			#content-image2{		
+				float:left;
+				width:420px;
+				height:300px;
+			}
+			#content-image2 img{
+				height:265px;
+				width:400px;
+			}
+			#content-word2{
+				float:left;
+				width:580px;
+				color:#AAAAAA;
+			}
+			#content3{
+				margin-top:20px;
+				float:left;
+			}
+			#content-image3{		
+				float:left;
+				width:420px;
+				height:300px;
+			}
+			#content-image3 img{
+				height:265px;
+				width:400px;
+			}
+			#content-word3{
+				float:left;
+				width:580px;
+				color:#AAAAAA;
+			}
+			#content4{
+				margin-top:20px;
+				float:left;
+			}
+			#content-image4{		
+				float:left;
+				width:420px;
+				height:300px;
+			}
+			#content-image4 img{
+				height:265px;
+				width:400px;
+			}
+			#content-word4{
+				float:left;
+				width:580px;
+				color:#AAAAAA;
+			}
+			.content-button{
+				margin-top:-30px;
+				float:right;
+			}
+			.one{
+				color:#EE4000;
+			}
+			.two{
+				color:#EE4000;
+				font-size:30px;
+			}
+			.three{
+				color:black;
+				font-size:15px;
+			}
+			.xuxian{
+				width:100%;
+				height:0;
+				border-bottom:#AAAAAA 1px dashed;
+			}
+			#fenye{
+				float:right;
+			}
+			#footer{
+				height:700px;
+			}
+			#footer-one{
+				float:left;
+				background-color: black;
+				
+				width:100%;
+				margin-top:1250px;
+			}
+			#footer-one ul{
+				margin-left:50px;
+				margin-top:60px;
+				line-height:15px;
+				float:left;
+				list-style-type: none;
+				
+			}
+			#footer-one ul li a{				
+				color:white;
+			}
+			#footer-one ul li a:hover{
+				text-decoration: none;
+			}
+			#footer-one-right{
+				float:right;
+				margin-right:200px;
+				margin-top:30px;
+				color:white;
+			}
+			#footer-two{
+				float:left;
+				background-color: black;
+				height:270px;
+				width:100%;
+				
+			}
+			#footer-two ul{
+				margin-left:105px;
+				margin-top:8px;
+			}
+			#footer-two ul li{
+				display: inline;
+				
+			}
+			#footer-three{
+				color:white;
+				text-align: center;
+			}
+			#picture{
+				float:right;
+				top:110px;
+				right:0;
+				position:fixed
+			}
+			#picture img{
+				height:300px;
+				width:35px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div id="header-top">
+			<div id="header-top-one"><a href="#"style="font-size:15px; ">400-808-8682</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size:10px;margin-bottom:3px;">请登录</a>&nbsp;|&nbsp;<a href="#" style="font-size:10px;">注册</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+			<div id="header-top-two">
+				<div id="header-top-two1"><img src="img/3.1_03.jpg">
+					<ul style="float:right;">
+						<li><a href="#">首页</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<li><a href="#">目的地</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<li><a href="#">亲子旅游</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<li><a href="#">酒店预订</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<li><a href="#">车辆接送</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<li><a href="#">签证代办</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<li><a href="#">精彩瞬间</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<li class="move"><li>
+				    </ul>
+				<div>
+			</div>
+		<div>
+		</nav>
+		<div id="picture"><img src="img/3.1_09.jpg"></div>
+		<div id="content">
+			<div id="content1">
+				<div id="content-image1"><img src="img/3.1_13.jpg"></div>
+				<div id="content-word1">
+					<h4><a href="#">LH德法瑞意+金色列车+少女峰+THEMALL10晚12天（瑞深）</a></h4>
+					<h4></h>Banyan Tree Bangkok</h4>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;夏令营是TA感受社会人生的一条小小路径，无论什么样的体验，什么样的体会都是一次经历，而这些经历，就是父母能带给幼小生命的，一笔珍贵、不会失落的财富<br/>
+					<br/>			
+					特工特训营5大收获：<br/>
+					
+					1、独立能力与沟通能力<br/>
+					2、双语环境，提升英语口语交流水平<br/>
+					3、团队合作，提升综合素质<br/>
+					4、客服心理障碍，提升自信<br/>
+					5、开拓视野，增长阅历激发天赋
+					</p>
+					<div class="content-button"><span class="one">￥</span>
+					<span class="two">8350</span>
+					<span class="three">&nbsp;/&nbsp;人起</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span><input type="button" value="查看详情" class="btn btn-danger"></span></div>
+				
+			</div>
+			<div id="content2">
+			<div id="content-image2"><img src="img/3.1_17.jpg"></div>
+			<div id="content-word2">
+				<h4><a href="#">LH德法瑞意+金色列车+少女峰+THEMALL10晚12天（瑞深）</a></h4>
+				<h4></h>Banyan Tree Bangkok</h4>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;夏令营是TA感受社会人生的一条小小路径，无论什么样的体验，什么样的体会都是一次经历，而这些经历，就是父母能带给幼小生命的，一笔珍贵、不会失落的财富<br/>
+					<br/>			
+					特工特训营5大收获：<br/>
+					
+					1、独立能力与沟通能力<br/>
+					2、双语环境，提升英语口语交流水平<br/>
+					3、团队合作，提升综合素质<br/>
+					4、客服心理障碍，提升自信<br/>
+					5、开拓视野，增长阅历激发天赋
+					</p>
+					<div class="content-button"><span class="one">￥</span>
+					<span class="two">8350</span>
+					<span class="three">&nbsp;/&nbsp;人起</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span><input type="button" value="查看详情" class="btn btn-danger"></span></div>
+				</div>
+				</div>
+				<div id="content3">
+				<div id="content-image3"><img src="img/3.1_19.jpg"></div>
+				<div id="content-word3">
+					<h4><a href="#">LH德法瑞意+金色列车+少女峰+THEMALL10晚12天（瑞深）</a></h4>
+					<h4></h>Banyan Tree Bangkok</h4>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;夏令营是TA感受社会人生的一条小小路径，无论什么样的体验，什么样的体会都是一次经历，而这些经历，就是父母能带给幼小生命的，一笔珍贵、不会失落的财富<br/>
+					<br/>			
+					特工特训营5大收获：<br/>
+					
+					1、独立能力与沟通能力<br/>
+					2、双语环境，提升英语口语交流水平<br/>
+					3、团队合作，提升综合素质<br/>
+					4、客服心理障碍，提升自信<br/>
+					5、开拓视野，增长阅历激发天赋
+					</p>
+					<div class="content-button"><span class="one">￥</span>
+					<span class="two">8350</span>
+					<span class="three">&nbsp;/&nbsp;人起</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span><input type="button" value="查看详情" class="btn btn-danger"></span></div>
+				</div>
+				</div>
+				<div id="content4">
+				<div id="content-image4"><img src="img/3.1_22.jpg"></div>
+				<div id="content-word4">
+					<h4><a href="#">LH德法瑞意+金色列车+少女峰+THEMALL10晚12天（瑞深）</a></h4>
+					<h4></h>Banyan Tree Bangkok</h4>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;夏令营是TA感受社会人生的一条小小路径，无论什么样的体验，什么样的体会都是一次经历，而这些经历，就是父母能带给幼小生命的，一笔珍贵、不会失落的财富<br/>
+					<br/>			
+					特工特训营5大收获：<br/>
+					
+					1、独立能力与沟通能力<br/>
+					2、双语环境，提升英语口语交流水平<br/>
+					3、团队合作，提升综合素质<br/>
+					4、客服心理障碍，提升自信<br/>
+					5、开拓视野，增长阅历激发天赋
+					</p>
+					<div class="content-button"><span class="one">￥</span>
+					<span class="two">8350</span>
+					<span class="three">&nbsp;/&nbsp;人起</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span><input type="button" value="查看详情" class="btn btn-danger"></span></div>
+				</div>
+				</div>
+				<div id="fenye">
+					<ul class="pagination">
+						<li><a href="#">&laquo;</a></li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">&raquo;</a></li>
+					</ul>
+					<span ><input type="button" class="btn btn-default" value="最末页"style="margin-top:-67px; margin-left:5px;"><span>
+			</div>				
+			</div>	
+		</div>
+		<div id="footer">
+			<div id="footer-one">
+				<div id="footer-one1">
+					<ul style="margin-left:110px;margin-top:60px;">
+						<li style="font-size: 15px;"><a href="#">关于我们</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<li style="font-size: 12px;"><a href="#">公司简介</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<li style="font-size: 12px;"><a href="#">团队介绍</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<li style="font-size: 12px;"><a href="#">帮助文档</a></li>
+					</ul>
+					<ul>
+						<li style="font-size: 15px;"><a href="#">网站须知</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<li style="font-size: 12px;"><a href="#">预订须知</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<li style="font-size: 12px;"><a href="#">网站条约</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<li><a href="#"></a></li>
+					</ul>
+					<ul>
+						<li style="font-size: 15px;"><a href="#">支付方式</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<li style="font-size: 12px;"><a href="#">支付宝</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<li style="font-size: 12px;"><a href="#">上门刷卡</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<li style="font-size: 12px;"><a href="#">银行转账</a></li>
+					</ul>
+					<ul>
+						<li style="font-size: 15px;"><a href="#">关注英华逸游</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<li><a href="#"><img src="img/3.1_06.jpg" style="height:80px;height:80px;"></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+					</ul>
+					<ul>
+						<li><a href="#"><img src="img/1.jpg" style="height:70px;height:70px; margin-top:26px; margin-left:-55px;"></a></li>
+					</ul>
+					<ul>
+						<li><img src="img/3.1_09.png" style="height:70px;height:70px; margin-top:40px;margin-left:-45px;"></li>
+					</ul>
+					<div id="footer-one-right">
+						<h3>咨询热线&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;400-808-8682<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0512-86862036</h3>
+						<p style="margin-top:-35px;">customer hotline</p><br/>
+						<h6>邮箱：cs@yhyiyou.com</h6>
+						<h6>地址：苏州市姑苏区三元二村16号兴元楼2楼东</h6>
+					<div>
+				</div>
+			</div>
+			<hr style="height:1px;border-top:1px solid #555555;width:100%;" />
+			<div id="footer-two">
+				<ul>
+					<li style="font-size:15px;"><a href="#">合作伙伴</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li><a href="#"><img src="img/3.1_33.jpg"></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li><a href="#"><img src="img/3.1_29.jpg"></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li><a href="#"><img src="img/3.1_31.jpg"></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li><a href="#"><img src="img/3.1_36.jpg"></a></li>
+				</ul>
+				<ul style="margin-left:-450px;margin-top:60px; font-size:10px;">
+					<li><a href="#">携程网</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li><a href="#">阿里飞猪</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li><a href="#">去哪儿</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li><a href="#">苏州旅游局</a></li>
+				</ul>
+				<ul>
+					<li style="font-size:15px;"><a href="#">热门位置</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">韩国</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">日本</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">澳大利亚</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">菲律宾</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">泰国</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">印度</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">马来西亚</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">新加坡</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">韩国</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">日本</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">澳大利亚</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">菲律宾</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">泰国</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">印度</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">马来西亚</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">新加坡</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">韩国</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">日本</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">澳大利亚</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">菲律宾</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">泰国</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">印度</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">马来西亚</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">新加坡</a></li>
+				</ul>
+				<ul>
+					<li style="font-size:15px;"><a href="#">主题服务</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">海岛度假</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">历史文化</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">探索冒险</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">美食购物</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">都市生活</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">海外游学</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">邮轮度假</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">蜜月摄影</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">亲子乐园</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</ul>
+				<ul>
+					<li style="font-size:15px;"><a href="#">友情链接</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">马蜂窝</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">穷游</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">booking</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">苏州旅游局</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">旅游网</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">酒店团购</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">携程旅游攻略</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">苏州旅游局</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">满天飞旅游网</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">马蜂窝</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">穷游</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">booking</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">苏州旅游局</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">旅游网</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">酒店团购</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">携程旅游攻略</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">满天飞旅游网</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">苏州旅游局</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">旅游网</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">酒店团购</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">携程旅游攻略</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li style="font-size:10px;"><a href="#">满天飞旅游网</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</ul>
+			</div>
+			<hr style="height:1px;border-top:1px solid #555555;width:100%;" />
+			<div id="footer-three">
+				<p>2017年9月  河北师范大学软件学院 版权所有</p>
+				<p>技术支持  软件学院</p>
+			</div>
+		<div>
+	</body>
+</script>
+</html>
