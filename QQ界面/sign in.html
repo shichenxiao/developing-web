@@ -40,30 +40,7 @@
 			width:75%;
 		}
 	</style>
-	<script>
-		$('#btn').click(function(){
-		var user=$('#user').val();  //输入框id
- 		var password1=$('#password').val(); //密码框id
-		$.ajax({
-			type:'get',
-			url:'http://datainfo.duapp.com/shopdata/userinfo.php ',
 
-			data:{status:'login',userID:user,password:password1},
-			
-			success:function(data){
-				if(data == 0){
-					alert('用户名不存在');
-				}
-				else if(data == 2){
-					alert('用户名密码不符');
-				}
-				else{
-					window.location.href="index.html";
-				}		
-			}
-		})
-	})
-	</script>
 	<body>
 		<!--第一个界面 登录界面-->
 		<div data-role="page" id="pageone">
@@ -84,4 +61,28 @@
     
     
 	</body>
+		<script>
+		$('#btn').click(function(){
+                var name=$('#qname').val();
+                var pass=$('#qpassword').val();
+                $.ajax({
+                    type:'get',
+                    url:' http://datainfo.duapp.com/shopdata/userinfo.php',
+                    data:{status:'login',userID:name,password:pass},
+            
+                    success:function(data){
+                        if(data == 0){
+                            alert('用户不存在');
+                        }
+                        else if(data == 2){
+                            alert('用户名与密码不符');
+                        }
+                        else{
+                            alert("昵称：" + $('#user').val()+ '\n'+ "密码："+ $('#password').val());
+                            window.location.href="index.html";
+                        }          
+                    }
+                })
+            })      
+	</script>
 </html>
