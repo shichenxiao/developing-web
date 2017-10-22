@@ -1,36 +1,88 @@
 <!DOCTYPE html>
-<head>
-<title></title>
-</head>
-<body class="b">
-<div class="lg">
-<form name="passwordChange">
-    <p><label for="password1">New
- Password:</label>
-    <input type="password"
- id="password1" onchange="checkPasswords()"></p>
-    <p><label for="password2">Confirm
- Password:</label>
-    <input type="password"
- id="password2" onchange="checkPasswords()"></p>
-</form>
-<button onclick="document.passwordChange.password1.checkValidity()">Check
- Validity</button>
-</body>
-<script>
-	
-function checkPasswords()
- {
-        var pass1
- = document.getElementById("password1");
-        var pass2
- = document.getElementById("password2");
- 
-        if (pass1.value
- != pass2.value)
-            pass1.setCustomValidity("两次输入的密码不匹配");
-        else
-            pass1.setCustomValidity("");
-    }
-</script>
+<html>
+	<head>
+		<title>登录界面</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    	<script src="js/jquery-2.2.2.js"></script>
+    	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<style>
+			.ui-bar-f{
+				color:white;
+				font-weight:null;
+				background-color: dodgerblue;
+			}
+			#head img{
+				height:2.0rem;
+				width:2.0rem;
+				margin-left:0.8rem ;
+				margin-top:0.3rem;
+				border-radius:100px;
+			}
+			#message img{
+				height:3.7rem;
+				width:3.7rem;
+				margin-top:0.7rem;
+				margin-left:0.7rem;
+				border-radius:100px;
+			}
+		#one img{
+			height:100px;
+			width:100px;
+			border-radius: 100px;
+			margin-top:65px;
+			
+		}
+		#two{
+			margin-top:15px;
+			width:75%;
+		}
+	</style>
+
+	<body>
+		<!--第一个界面 登录界面-->
+		<div data-role="page" id="pageone">
+        <div data-role="content" >
+            <div id="one" align="center"><img src="img/9.jpg"><div>
+            <div id="two">
+            	
+            	<input type="text" id="user" name="text" placeholder="QQ号码/手机/邮箱"> 
+            	<input type="password" id="password" name="password" placeholder="点击输入QQ密码">
+            	
+            	 <a  class="ui-btn ui-btn-inline" id="btn">登录</a>
+				<a href="sign up.html" class="ui-btn ui-btn-inline">注册</a>
+            	
+            </div>
+        </div>
+    	</div> 
+    
+    
+    
+	</body>
+		<script>
+		$('#btn').click(function(){
+                var name=$('#qname').val();
+                var pass=$('#qpassword').val();
+                $.ajax({
+                    type:'get',
+                    url:' http://datainfo.duapp.com/shopdata/userinfo.php',
+                    data:{status:'login',userID:name,password:pass},
+            
+                    success:function(data){
+                        if(data == 0){
+                            alert('用户不存在');
+                        }
+                        else if(data == 2){
+                            alert('用户名与密码不符');
+                        }
+                        else{
+                            alert("昵称：" + $('#user').val()+ '\n'+ "密码："+ $('#password').val());
+                            window.location.href="index.html";
+                        }          
+                    }
+                })
+            })      
+	</script>
 </html>
