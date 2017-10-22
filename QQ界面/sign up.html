@@ -17,80 +17,89 @@
 		
 	</style>
 	<script>
-	$('#btn').click(function(){
-		var user1=$('#user').val();  //输入框id
- 		var password1=$('#password').val(); //密码框id
-		$.ajax({
-			type:'post',
-			url:'http://datainfo.duapp.com/shopdata/userinfo.php',
+//			var password1 = document.getElementById("password1");
+//	var password2 = document.getElementById("password2");
+//		var user = document.getElementById("user");
+//	function signIn(){
+//			
+//			with(document.all){ 
+//				if(password1.value!=password2.value) 
+//			{ 
+//					alert("密码不一致") 
+//					password1.value = ""; 
+//					password2.value = ""; 
+//					
+//				} 
+//				else if(user.value.length<3){
+//	     		alert("用户名必须在3位以上");
+//		     		user.value = ""; 
+//					
+//		           
+//		     	}
+//				else if (user.value==""){
+//			        alert("用户名不能为空！");
+//			        
+//			    }
+//				else if (password1.value==""){
+//			        alert("密码不能为空！");
+//
+//			    }
+//
+//				else {
+//					alert("您的登录账号为:"+ user.value +"密码为：" + password1.value);
+//					document.forms[0].submit(); 
+//					window.location.href="QQsignin.html";
+//
+//			}
+//			}
+//		}
 
-			data:{status:'register',userID:'user1',password:'password1'},
-			
-			success:function(data){
-				if(data == 0){
-					alert('用户名重名');
-				}
-				else if(data == 2){
-					alert('数据库报错');
-				}
-				else{
-					alert("注册成功");
-					window.location.href="http://www.baidu.com";
-				}		
-			},
-			error:function(){
-        alert('error');
-    }
-		});
-	})
 	</script>
-	<script>
-//	
-//	    function Check(frm1)
-//   	{
-//   	if(frm1.username.value.length<3){
-//   		alert("用户名必须在3位以上");
-//   		document.frm1.username.focus();
-//         return false;
-//   	}
-//   	if (frm1.username.value==""){
-//        alert("用户名不能为空！");
-//        document.frm1.username.focus();
-//        return false;
-//   	}
-//    	if (frm1.p.value==""){
-//        alert("密码不能为空！");
-//        document.frm1.p.focus();
-//        return false;
-//    	}
-//    	 if (frm1.p2.value!=frm1.p.value){
-//        alert("两次密码不一致！");
-//        document.frm1.p2.focus();
-//        return false;
-//    	}
-//		} 
-		</script>
 		
 	<body>
-		<!--第二个界面 注册界面-->
+
 		<div data-role="page" id="pageone">
-        <div data-role="content" >
+        <div data-role="content" id="content">
         
             <div id="two" class="ui-field-contain">
-            	<form name="firm1">
-            	<label for="fname">输入昵称：</label>
-            	<input type="text" id="user" name="username" placeholder="昵称为3位以上">  
-            	<label for="fname">输入密码：</label>
+            	<form method="post" action="demoform.asp">
+            	<label for="user" class="ui-hidden-accessible">输入昵称：</label>
+            	<input type="text" id="user" name="username" placeholder="昵称为3位以上" class="required">  
+            	<label for="password" class="ui-hidden-accessible">输入密码：</label>
             	<input type="password" id="password" placeholder="密码为6~12位之间的数字或者字母" name="p">
-            	<!--<label for="fname">确认密码：</label>
-            	<input type="password"  placeholder="密码为6~12位之间的数字或者字母" name="p2">      -->
-            	<button id="btn" type='submit'>注册</button>
-            	<a href="sign in.html" class="ui-btn">登录已有账号</a> <!--onclick="return Check(this.form)"-->
+            	
+            	<a href="#pageone" data-role="button"  id="btn">注册</a>
+            	<a href="sign in.html" data-role="button">登录已有账号</a> 
             
             	</form>
             </div>
         </div>
     	</div>       
 	</body>
+	<script>
+	 $('#btn').click(function(){
+		var name=$('#user').val();
+ 		var pass=$('#password').val();
+		$.ajax({
+			type:'get',
+			url:'http://datainfo.duapp.com/shopdata/userinfo.php',
+			data:{status:'register',userID:name,password:pass},
+			
+			success:function(data){
+				if(data == 0){
+					alert('用户名已被使用，请重新命名');
+				}
+				else if(data == 2){
+					alert('数据库错误');
+				}
+				else{
+					alert("昵称：" + $('#user').val()+ '\n'+ "密码："+ $('#password').val());
+					window.location.href="sign in.html";
+				}		
+			}
+		})
+	})	    
+	</script>
+
 </html>
 
